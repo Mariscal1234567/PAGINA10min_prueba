@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova | Tecnología del futuro</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0b1020;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: #10182c;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #8b7cff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #8b7cff;
+        }
+
+        .hero {
+            min-height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #111b35, #30245c);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #9b8cff;
+        }
+
+        .hero p {
+            color: #c5c9d8;
+            font-size: 18px;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #8270ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #6652e8;
+            transform: translateY(-3px);
+        }
+
+        .services {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #151f36;
+            padding: 35px 25px;
+            border-radius: 14px;
+            border: 1px solid #293454;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #8270ff;
+        }
+
+        .card h3 {
+            color: #a99aff;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #bdc3d3;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #10182c;
+            text-align: center;
+            padding: 25px;
+            color: #9da6bb;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">TechNova.</div>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>El futuro es <span>ahora.</span></h1>
+
+        <p>
+            Descubre un mundo de innovación, tecnología y creatividad.
+            Explora nuevas posibilidades y transforma tus ideas.
+        </p>
+
+        <a href="#servicios" class="btn">Descubrir más</a>
+    </section>
+
+    <section class="services" id="servicios">
+        <h2>Nuestras categorías</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>💻 Tecnología</h3>
+                <p>Conoce las últimas tendencias del mundo tecnológico.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Innovación</h3>
+                <p>Explora ideas innovadoras que transforman el futuro.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Conectividad</h3>
+                <p>Un mundo conectado para descubrir nuevas oportunidades.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p>© 2026 TechNova. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
